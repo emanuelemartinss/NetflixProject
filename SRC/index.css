@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
+}
+.navbar_brand {
+    width: 100px;
+}
+.brand_logo {
+    width: 100%;
+    height: 100%;
+}
+.language_drop_down {
+    background: transparent;
+    border: none;
+    color: white;
+}
+.language_drop_down:focus {
+    outline: none;
+
+}
+.dropdown_container {
+    border: 3 px solid white;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: rgba(77, 61, 61, 0.4);
+}
+.signin_button {
+    background-color: #dc030f;
+    border: 2px #dc030f;
+    color: white;
+    padding: 0.4rem 0.5rem;
+    border-radius: 4px;
+}
+.navbar_nav_items {
+    display: flex;
+    gap: 10px;
+}
+.hero_bg_image_container {
+    width: 100%;
+    height: 90vh;
+}
+.hero_bg_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero_bg_overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+.hero_card {
+    position: absolute;
+    top: 42%;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.hero_title {
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 0.20cm 0;
+}
+.hero_subtitle,
+.hero_description {
+    font-weight: 690;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+.hero_description {
+    font-size: 1.25 rem;
+    margin: 2 80px;
+    line-height: 2rem
+    
+}
+.email_input {
+    border: 0.1px solid;
+    border-radius: 3px;
+    border-color: rgb(225, 227, 228);
+    background: rgb(59, 56, 56, 0.27);
+    width: 100%;
+    height: 100%;
+    padding:  24px 18px 8px;
+    line-height: normal;
+}
+.email_label {
+    color: rgb(153, 144, 144);
+    position: absolute;
+    top: 38%;
+    left: 39%;
+    color: rgb (153, 149,149);
+}
+.email_form_container {
+    display: flex;
+    color: red;
+    flex-direction: ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form_container {
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    position: relative;
+}
+.email_input:focus + .email_label {
+    top: 0.9rem;
+    font-size: 15px;
+}
+.email_input:not(:placeholder-shown).email_input:not(:focus) + .email_label {
+    top 0.2rem;
+    font-size: 17px;
+}
+.email_input:focus-visible {
+    outline: none;
+}
+.primary_button {
+    background-color: #dc030f;
+    border: 0px solid;
+    color: white;
+    padding: 1rem 1.2rem;
+    border-radius:2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.feature {
+    border-top: 8px solid #222;
+    padding: 2rem 1 rem;
+}
+.featureDetails {
+    text-align: center;
+}
+.featureTitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.featureSubtutle {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 00;
+}
+.featureImageContainer {
+    width: 100%;
+    position: relative;
+}
+.featureImage {
+    width: 100%;
+}
+.featureBackgroudVideoContainer {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+}
+.featureBackgroudVideo {
+    width: 100%;
+}
+.feature2posterContainer {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 16em;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 60px;
+    padding: 0.25rem 0.6rem;
+    gap: 15px;
+  }
+  
+  .posterContainer {
+    width: 20%;
+  }
+  
+  .poster {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .posterDetails {
+    width: 60%;
+  }
+  
+  .posterDetails > h4 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .posterDetails > h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(63, 63, 246);
+  }
+  
+  .downloadGifContainer {
+    width: 20%;
+    height: 100%;
+  }
+  
+  .gif {
+     width: 100%;
+    height: 100%;
+  }
+  .feature3backgroudVideoContainer {
+    max-width: 63%;
+    max-height: 47%;
+    z-index: -2;
+    top: 9%;
+    left: 19%;
+  }
+  footer {
+    border-top: 8px solid #333;
+    padding: 2rem 1rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+   
+  .footerRow2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .footerRow1 > h4 {
+    font-size: 15px;
+    font-weight: 500;
+  }
